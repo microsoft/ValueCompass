@@ -17,7 +17,7 @@ deepspeed --num_gpus=1 ./main.py \
     --per_device_eval_batch_size 32 \
     --max_seq_len 2048 \
     --learning_rate 1e-5 \
-    --num_train_epochs 5 \
+    --num_train_epochs 10 \
     --weight_decay 0 \
     --gradient_accumulation_steps 1 \
     --num_warmup_steps 50 \

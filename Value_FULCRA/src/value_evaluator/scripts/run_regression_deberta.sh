@@ -1,4 +1,4 @@
-OUTPUT=../../output/evaluator/regression
+OUTPUT=../../output/evaluator/
 mkdir -p $OUTPUT
 
 deepspeed --num_gpus=1 ./main.py \
@@ -13,8 +13,8 @@ deepspeed --num_gpus=1 ./main.py \
     --label_num 100 \
     --max_new_tokens 256 \
     --model_name_or_path microsoft/deberta-v3-large \
-    --per_device_train_batch_size 4 \
-    --per_device_eval_batch_size 4 \
+    --per_device_train_batch_size 32 \
+    --per_device_eval_batch_size 32 \
     --max_seq_len 2048 \
     --learning_rate 1e-5 \
     --num_train_epochs 10 \
