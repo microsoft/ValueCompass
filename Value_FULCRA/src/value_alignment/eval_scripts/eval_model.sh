@@ -11,3 +11,6 @@ python eval.py \
     --reward_model OpenAssistant/reward-model-deberta-v3-large-v2 \
     --reward \
     --value_reward # &> $OUTPUT/evaluator_deberta_eval_reward.log
+
+# --model ../../output/value_alignment/dataset_saferlhf_model_alpaca-7b-reproduced_reward_deberta_tanh_ensemble_bs_32_kl_0.1_ppo_epochs_2_epochs_20_ideal/final_model/ \
+# --model PKU-Alignment/alpaca-7b-reproduced \
