@@ -402,7 +402,7 @@ def value_reward_computation(args, infer_data):
 
 def toxicity_computation(args, infer_data):
     from perspective import PerspectiveAPI
-    Perspective = PerspectiveAPI("AIzaSyCTqVo3FBVJka8m04Qf52LHlbiVoFVxLgk")
+    Perspective = PerspectiveAPI(YOUR_PERSPECTIVEAPI_KEY)
     score_list = []
     for idx, line in tqdm(enumerate(infer_data), desc="computing the toxicity for inferred data."):
         prompt = line["prompt"]
